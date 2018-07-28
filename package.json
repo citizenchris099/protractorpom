@@ -1,0 +1,16 @@
+{
+  "name": "@flywheelbi/flywheel-automation",
+  "version": "1.0.0",
+  "description": "intergration test suite for flywheel",
+  "scripts": {
+    "smoke_test_desktop": "protractor ./conf/load_conf.js --params.environment.site YTdopSSK7Pu9JP6Pm --params.environment.team CuaFrmxSTKNaxqctb --params.environment.toTest ",
+    "regression_test_desktop": "protractor ./conf/load_conf.js --params.environment.site YTdopSSK7Pu9JP6Pm --params.environment.team CuaFrmxSTKNaxqctb --params.environment.type regression --params.environment.toTest ",
+    "smoke_test_mobile": "protractor ./conf/mobile_conf.js --params.environment.site YTdopSSK7Pu9JP6Pm --params.environment.team CuaFrmxSTKNaxqctb --params.environment.toTest ",
+    "regression_test_mobile": "protractor ./conf/mobile_conf.js --params.environment.site YTdopSSK7Pu9JP6Pm --params.environment.team CuaFrmxSTKNaxqctb --params.environment.type regression --params.environment.toTest "
+  },
+  "dependencies": {
+    "protractor": "^5.1.1",
+    "protractor-jasmine2-html-reporter": "0.0.7",
+    "supertest": "^3.0.0"
+  }
+}
